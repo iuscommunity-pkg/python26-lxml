@@ -6,8 +6,8 @@
 %define name python%{pybase_ver}-lxml
 
 Name:           %{name} 
-Version:        2.0.11
-Release:        2.ius%{?dist}
+Version:        3.1.1
+Release:        1.ius%{?dist}
 Summary:        ElementTree-like Python bindings for libxml2 and libxslt
 
 Group:          Development/Libraries
@@ -45,10 +45,13 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,-)
-%doc README.txt LICENSES.txt PKG-INFO CREDITS.txt CHANGES.txt doc/
+%doc LICENSES.txt PKG-INFO CREDITS.txt CHANGES.txt doc/
 %{python_sitearch}/*
 
 %changelog
+* Wed Apr 10 2013 Jeffrey Ness <jeffrey.ness@racksapce.com> - 3.1.1-1.ius
+- Building latest 3.1.1
+
 * Thu Feb 03 2011 Jeffrey Ness <jeffrey.ness@racksapce.com> - 2.0.11-2.ius
 - Adding python-devel to Build Requires
 
